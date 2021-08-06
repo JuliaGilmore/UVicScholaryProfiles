@@ -15,6 +15,7 @@ Summer 2021
 
 <br>
 
+
 This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. 
 
 Sources: 
