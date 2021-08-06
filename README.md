@@ -20,9 +20,9 @@ This timeline depicts all Campus Buildings where dates of inception are known. T
 
 Sources: 
 
-[University of Victoria: Maps & buildings] (https://www.uvic.ca/search/maps-buildings/index.php)
+[University of Victoria: Maps & buildings](https://www.uvic.ca/search/maps-buildings/index.php/)
 
-University of Victoria Art Collections (UVAC) 2011 exhibit: [The Emergence of Architectual Modernism in Victoria; UVic Campus] (https://uvac.uvic.ca/Architecture_Exhibits/UVic_campus/)
+University of Victoria Art Collections (UVAC) 2011 exhibit: [The Emergence of Architectual Modernism in Victoria; UVic Campus](https://uvac.uvic.ca/Architecture_Exhibits/UVic_campus/)
 
 
 <br>
