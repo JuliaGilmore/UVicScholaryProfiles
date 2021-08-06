@@ -2,7 +2,7 @@ Project by Julia Gilmore, Metadata Assistant, University of Victoria Libraries |
 
 The goal of this project is to experiment with ways that the University of Victoria (UVic) Libraries can use Wikidata to support the creation of scholarly profiles. 
 
-_Note: The creation of this page was inspired by a similar [Wikidata visualization page](https://yooylee.github.io/experiment-wikidata-canadian-archive-women-in-stem/) from the University of Ottawa's [Canadian Archive of Women in STEM](https://biblio.uottawa.ca/en/women-in-stem/about) project, and a previous project using Wikidata to connect archival holdings at University of Victoria Special Collections and University Archives (SCUA), completed by Elizabeth Bassett, Special Collections and Archives Assistant, in July 2020. 
+_Note: The creation of this page was inspired by a similar [Wikidata visualization page](https://yooylee.github.io/experiment-wikidata-canadian-archive-women-in-stem/) from the University of Ottawa's [Canadian Archive of Women in STEM](https://biblio.uottawa.ca/en/women-in-stem/about) project, and a previous project using Wikidata to connect archival holdings at University of Victoria Special Collections and University Archives (SCUA), completed by Elizabeth Bassett, Special Collections and Archives Assistant, in July 2020. See the Wikidata visualization page for this project here: https://elizabethbassett.github.io/uvic-scua-wikidata-experimentation/
 
 <br>
 
