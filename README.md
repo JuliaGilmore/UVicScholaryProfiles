@@ -52,7 +52,6 @@ Completed Summer 2021
 
 ### _**Which Faculty or Department has the most Twitter followers?**_
 
-<br>
 
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3FTwitter_followers%0AWHERE%0A%7B%0A%20%20%20%20%7B%20%3Fitem%20wdt%3AP31%20wd%3AQ2467461.%7D%20%23%20instance%20of%20academic%20department%20%0A%20%20%20%20%20UNION%0A%20%20%20%20%20%7B%3Fitem%20wdt%3AP31%20wd%3AQ180958.%7D%20%23%20instance%20of%20faculty%20%0A%20%20%20%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132%20.%20%23%20located%20in%20Victoria%0A%20%20OPTIONAL%20%20%20%7B%20%3Fitem%20p%3AP2002%20%3FTwitter_username.%0A%20%20%20%20%3FTwitter_username%20pq%3AP3744%20%3FTwitter_followers.%20%7D%0A%0A%20%20OPTIONAL%20%7B%3Fitem%20wdt%3AP2013%20%3FFacebook_ID.%7D%0A%20OPTIONAL%20%7B%3Fitem%20wdt%3AP2003%20%3FInstagram_ID.%7D%0A%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AORDER%20BY%20DESC%20%28%3FTwitter_followers%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
