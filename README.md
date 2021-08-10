@@ -24,6 +24,12 @@ Completed Summer 2021
 ----  
 <br>
 ### _**Where are the headquarters for the UVic Faculties and Academic Departments located?**_
+<br>
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23defaultView%3AMap%0A%0ASELECT%20%3Findividual_entity%20%3Findividual_entityLabel%20%3Fcoordinate_location%20%3Foccupant%20%3FoccupantLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Findividual_entity%20wdt%3AP466%20%3Foccupant.%0A%20%20OPTIONAL%20%7B%20%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20OPTIONAL%20%7B%20%3Findividual_entity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
 ### _**When were the UVic Campus Buildings built?**_
 ### _**What does the UVic campus look like?**_
 ### _**Which Campus Buildings are named after people?**_
