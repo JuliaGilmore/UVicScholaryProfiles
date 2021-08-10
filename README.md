@@ -44,7 +44,7 @@ SELECT ?university_building ?inception WHERE {
 
 ### _**When are the occupations of the UVic Campus Building namesakes?**_ 
 
-
+<iframe style="width: 55vw; height: 50vh; border: none;"
 src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20their%20listed%20occupations%20%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20listed%20occupations%0ASELECT%20DISTINCT%20%3FoccupationLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP106%20%3Foccupation%20.%20%23%20namesake%20with%20an%20occupation%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FoccupationLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 This table depicts all known occupations for the namesakes of UVic campus buildings. 
 
@@ -53,12 +53,6 @@ This table depicts all known occupations for the namesakes of UVic campus buildi
 _SPARQL query used to generate the table:_
 
 ```
-#defaultView:BubbleChart
-#UVic Campus Buildings with namesakes and their listed occupations 
-# instance of university building
-# owned by University of Victoria
-# namesake
-# namesakes with listed occupations
 SELECT DISTINCT ?occupationLabel (COUNT (?namesake) as ?Count)
 WHERE {
   ?item wdt:P31 wd:Q19844914. #university building
