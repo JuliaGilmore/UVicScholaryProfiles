@@ -7,10 +7,33 @@ Completed Summer 2021
 
 ## Visualizing the University of Victoria (UVic) through Wikidata Queries
 ----  
-
 <br>
 
-### _**When were the UVic Campus Buildings built?**_ 
+## Faculties and Academic Departments 
+----  
+<br>
+### _**What can I study at the University of Victoria?**_
+### _**Can I explore the different UVic Faculties?**_
+### _**Which UVic Faculties and Academic Departments are listed in LC and VIAF?**_
+### _**Which undergraduate UVic Faculties have the most departments?**_
+### _**What is the social media presence for the various Faculties and Departments?**_
+### _**Which Faculty or Department is most active on social media?**_
+<br>
+
+## Exploring the University of Victoria Campus 
+----  
+<br>
+### _**Where are the headquarters for the UVic Faculties and Academic Departments located?**_
+### _**When were the UVic Campus Buildings built?**_
+### _**What does the UVic campus look like?**_
+### _**Which Campus Buildings are named after people?**_
+### _**When were the Campus Buildings dedicated and to whom?**_
+### _**Which Campus Buildings are named after women?**_
+### _**Which Campus Buildings are LEED Certified and where are they located?**_
+### _**What are the most common occupations of the Campus Building namesakes?**_
+### _**What awards and honours have the namesakes received?**_
+
+<br>
 
 <iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://w.wiki/3nxb" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
