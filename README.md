@@ -11,7 +11,7 @@ Completed Summer 2021
 
 ## Faculties and Academic Departments 
 ----  
-<br>
+
 
 ### _**Where are the headquarters for the UVic Faculties and Academic Departments located?**_
 
