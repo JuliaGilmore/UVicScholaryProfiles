@@ -66,7 +66,7 @@ Completed Summer 2021
 <br>
 ---- 
 
-_This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. Dates refer to when the buildings were built - not when they were dedicated to specific namesakes. In some instances, buildings have been renamed or had namesakes removed (e.g. Landsdown Residence #1, Fraser Building). All former namesakes are still included in this timeline. _
+This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. Dates refer to when the buildings were built - not when they were dedicated to specific namesakes. In some instances, buildings have been renamed or had namesakes removed (e.g. Landsdown Residence #1, Fraser Building). All former namesakes are still included in this timeline. _______
 
 <br>
 
@@ -85,7 +85,7 @@ UVic Campus component of University of Victoria Art Collections (UVAC) 2011 exhi
 
 ----
 
-_Images of the  University of Victoria Campus are also available on Wikimedia Commons under the category: [University of Victoria campus]_(https://commons.wikimedia.org/wiki/Category:University_of_Victoria_campus).
+Images of the  University of Victoria Campus are also available on Wikimedia Commons under the category: [University of Victoria campus](https://commons.wikimedia.org/wiki/Category:University_of_Victoria_campus).
 
 <br>
 
@@ -131,7 +131,7 @@ Source:
 <br>
 ----
 
-_This tree depicts all faculties, departments, and campus building namesakes who are the creators of fonds are located at UVic Special Collections and University Archives. Many of the campus building namesakes are subject access points for various fonds within UVic Archives, however they are not the creators of these fonds and thus, have been omitted from these search results._ 
+This tree depicts all faculties, departments, and campus building namesakes who are the creators of fonds are located at UVic Special Collections and University Archives. Many of the campus building namesakes are subject access points for various fonds within UVic Archives, however they are not the creators of these fonds and thus, have been omitted from these search results. 
 
 
 _SPARQL query used to generate the table:_
