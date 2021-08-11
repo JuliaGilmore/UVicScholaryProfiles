@@ -21,8 +21,7 @@ Completed Summer 2021
 
 ### _**What can I study at the University of Victoria?**_
 
-
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23defaultView%3ABubbleChart%0A%23%20What%20can%20I%20study%20at%20UVic%3F%20%0A%23%20instance%20of%20faculty%0A%23%20located%20in%20Victoria%0A%23%20has%20field%20of%20work%0A%0ASELECT%20DISTINCT%20%3FstudiesLabel%20%28COUNT%20%28%3Fitem%29%20as%20%3FCount%29%0AWHERE%0A%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ180958.%20%23faculty%0A%20%20%3Fitem%20wdt%3AP361%20wd%3AQ1458113.%20%23%20part%20of%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%20%23%20located%20in%20Victoria%0A%20%20%3Fitem%20wdt%3AP101%20%3Fstudies%20.%20%23%20field%20of%20work%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D%20%0A%0AGROUP%20BY%20%28%3FstudiesLabel%29%20%0AORDER%20BY%20DESC%20%28%3FCount%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23defaultView%3ABubbleChart%0A%23%20What%20can%20I%20study%20at%20UVic%3F%20%0A%23%20instance%20of%20academic%20department%0A%23%20located%20in%20Victoria%0A%23%20has%20field%20of%20work%0A%0ASELECT%20DISTINCT%20%3FstudiesLabel%20%28COUNT%20%28%3Ffaculty%29%20as%20%3FCount%29%0AWHERE%0A%7B%0A%20%20%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%20%23faculty%0A%20%20%3Ffaculty%20wdt%3AP361%20wd%3AQ1458113.%20%23%20part%20of%20University%20of%20Victoria%0A%20%20%3Ffaculty%20wdt%3AP101%20%3Fstudies%20.%20%23%20field%20of%20work%0A%20%20%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D%20%0A%0AGROUP%20BY%20%28%3FstudiesLabel%29%20%0AORDER%20BY%20DESC%20%28%3FCount%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -52,7 +51,6 @@ Completed Summer 2021
 
 ### _**Which Faculty or Department has the most Twitter followers?**_
 
-
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3FTwitter_followers%0AWHERE%0A%7B%0A%20%20%20%20%7B%20%3Fitem%20wdt%3AP31%20wd%3AQ2467461.%7D%20%23%20instance%20of%20academic%20department%20%0A%20%20%20%20%20UNION%0A%20%20%20%20%20%7B%3Fitem%20wdt%3AP31%20wd%3AQ180958.%7D%20%23%20instance%20of%20faculty%20%0A%20%20%20%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132%20.%20%23%20located%20in%20Victoria%0A%20%20OPTIONAL%20%20%20%7B%20%3Fitem%20p%3AP2002%20%3FTwitter_username.%0A%20%20%20%20%3FTwitter_username%20pq%3AP3744%20%3FTwitter_followers.%20%7D%0A%0A%20%20OPTIONAL%20%7B%3Fitem%20wdt%3AP2013%20%3FFacebook_ID.%7D%0A%20OPTIONAL%20%7B%3Fitem%20wdt%3AP2003%20%3FInstagram_ID.%7D%0A%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AORDER%20BY%20DESC%20%28%3FTwitter_followers%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
@@ -61,15 +59,13 @@ Completed Summer 2021
 ----  
 <br>
 
-<br>
-
 ### _**When were the UVic Campus Buildings built?**_
 
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fitem%20%3Flaunchdate%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3FitemLabel%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Flaunchdate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%7D%0AGROUP%20BY%20%3Fitem%20%3FitemLabel%20%3Flaunchdate" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
-This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. Dates refer to when the buildings were built - not when they were dedicated to specific namesakes. In some instances, buildings have been renamed or had namesakes removed (e.g. Landsdown Residence #1, Fraser Building). All former namesakes are still included in this timeline. 
+_This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. Dates refer to when the buildings were built - not when they were dedicated to specific namesakes. In some instances, buildings have been renamed or had namesakes removed (e.g. Landsdown Residence #1, Fraser Building). All former namesakes are still included in this timeline. _
 
 Sources: 
 
@@ -84,7 +80,7 @@ UVic Campus component of University of Victoria Art Collections (UVAC) 2011 exhi
 
 <br>
 
-Images of the  University of Victoria Campus are also available on Wikimedia Commons under the category: [University of Victoria campus](https://commons.wikimedia.org/wiki/Category:University_of_Victoria_campus).
+_Images of the  University of Victoria Campus are also available on Wikimedia Commons under the category: [University of Victoria campus]_(https://commons.wikimedia.org/wiki/Category:University_of_Victoria_campus).
 
 <br>
 
@@ -118,15 +114,11 @@ Source:
 
 ### _**What awards and honours have the Campus Building namesakes received?**_
 
-<br>
-
 <iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20awards%20they%20have%20received%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20awards%0ASELECT%20DISTINCT%20%3FawardLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP166%20%3Faward%20.%20%23%20namesake%20with%20an%20award%20%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FawardLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
 ### _**What Faculties, Departments, and Campus Building namesakes have holding at University of Victoria Special Collections and University Archives?**_
-
-<br>
 
 <iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/#%23defaultView%3ATree%0A%23UVic%20Faculties%2C%20Departments%2C%20Buildings%2C%20Building%20namesakes%20whose%20archives%20are%20held%20at%20University%20of%20Victoria%20Special%20Collections%20and%20University%20Archives%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%0ASELECT%20%3Fbuilding%20%3FnamesakeLabel%20%3Ffaculty%20%3FfacultyLabel%20%3Fdepartment%20%3FdepartmentLabel%20%0AWHERE%20%7B%0A%20%20%7B%3Fbuilding%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Fbuilding%20wdt%3AP127%20wd%3AQ1458113.%20%23university%20building%0A%20%20%3Fbuilding%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%0A%20%20%3Ffaculty%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Fdepartment%20wdt%3AP31%20wd%3AQ2467461.%0A%20%20%3Fdepartment%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20DESC%20%28%3FbuildingLabel%29%20%3FfacultyLabel%20%3FdepartmentLabel%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
