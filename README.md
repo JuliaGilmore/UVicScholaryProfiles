@@ -19,9 +19,36 @@ Completed Summer 2021
 
 <br>
 
+To create this map visualization, campus buildings were used as the starting point (as they have defined coordinates, while the faculties and departments do not). During the Wikidata population stage of this project, faculties and departments were connected to campus buildings using P466 - occupant. Using this property (P466) as a query condition allows faculties and departments to appear in the SPARQL results and be matched to the appropriate buildings. Any other organizations (e.g. Ocean Networks Canada) listed as occupants were omitted from the search using the MINUS function.  
+
+<br>
+
+_SPARQL query used to generate the table:_
+
+```
+SELECT ?building ?buildingLabel ?coordinate_location ?occupant ?occupantLabel WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?building wdt:P31 wd:Q19844914.
+  ?building wdt:P466 ?occupant.
+  ?building wdt:P127 wd:Q1458113.
+  ?building wdt:P625 ?coordinate_location.
+  MINUS {?building wdt:P131 wd:Q2000769.}
+  MINUS {?occupant wdt:P466 wd:Q16959841.}
+  
+}
+```
+
+<br>
+
 ### _**What can I study at the University of Victoria?**_
 
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23defaultView%3ABubbleChart%0A%23%20What%20can%20I%20study%20at%20UVic%3F%20%0A%23%20instance%20of%20academic%20department%0A%23%20located%20in%20Victoria%0A%23%20has%20field%20of%20work%0A%0ASELECT%20DISTINCT%20%3FstudiesLabel%20%28COUNT%20%28%3Ffaculty%29%20as%20%3FCount%29%0AWHERE%0A%7B%0A%20%20%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%20%23faculty%0A%20%20%3Ffaculty%20wdt%3AP361%20wd%3AQ1458113.%20%23%20part%20of%20University%20of%20Victoria%0A%20%20%3Ffaculty%20wdt%3AP101%20%3Fstudies%20.%20%23%20field%20of%20work%0A%20%20%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D%20%0A%0AGROUP%20BY%20%28%3FstudiesLabel%29%20%0AORDER%20BY%20DESC%20%28%3FCount%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+This bubble chart visualization collects subject areas listed under P101 (field of work) for all UVic Faculties. 
+
+Note: A separate query was performed for UVic Academic Departments and can be viewed as a [Table](https://w.wiki/3pUN) or [Bubble Chart](https://w.wiki/3qGh).
 
 <br>
 
