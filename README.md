@@ -7,7 +7,7 @@ Completed Summer 2021
 
 ## Visualizing the University of Victoria (UVic) through Wikidata Queries
 ----  
-<br>
+
 
 ## Faculties and Academic Departments 
 ----  
