@@ -1,4 +1,4 @@
-Project by Julia Gilmore, Metadata Assistant, University of Victoria (UVic) Libraries 
+Project by Julia Gilmore, Metadata Practicum Student, University of Victoria (UVic) Libraries 
 
 Completed Summer 2021
 
