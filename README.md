@@ -73,7 +73,9 @@ ORDER BY DESC (?Count)
 
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3Fitem%20%3FitemLabel%20%3FlocationLabel%20%3FdepartmentLabel%0AWHERE%20%0A%7B%0A%20%20%23%20Item%20Property%20Value%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ180958.%20%23%20all%20the%20items%20that%20have%20instance%20of%20value%20faculty.%0A%20%20%3Fitem%20wdt%3AP361%20wd%3AQ1458113.%20%23%20and%20are%20part%20of%20the%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP276%20%3Flocation.%0A%20%20%3Fitem%20wdt%3AP527%20%3Fdepartment.%0A%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%0A%0A%7D%0A%0A%0A%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
+
 <br>
+
 _SPARQL query used to generate the table:_
 ```
 SELECT ?faculty ?facultyLabel ?locationLabel ?departmentLabel
@@ -110,6 +112,7 @@ SELECT ?item ?itemLabel ?Library_of_Congress_authority_IDLabel ?VIAF_IDLabel WHE
 ORDER BY DESC (?Library_of_Congress_authority_IDLabel) (?VIAF_IDLabel)
 ```
 <br>
+
 
 ### _**Which undergraduate UVic Faculties have the most departments?**_
 
