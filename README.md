@@ -15,7 +15,7 @@ Completed Summer 2021
 
 ### _**Where are the headquarters for the UVic Faculties and Academic Departments located?**_
 
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23defaultView%3AMap%0A%0ASELECT%20%3Findividual_entity%20%3Findividual_entityLabel%20%3Fcoordinate_location%20%3Foccupant%20%3FoccupantLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Findividual_entity%20wdt%3AP466%20%3Foccupant.%0A%20%20OPTIONAL%20%7B%20%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20OPTIONAL%20%7B%20%3Findividual_entity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23defaultView%3AMap%0A%0ASELECT%20%3Findividual_entity%20%3Findividual_entityLabel%20%3Fcoordinate_location%20%3Foccupant%20%3FoccupantLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Findividual_entity%20wdt%3AP466%20%3Foccupant.%0A%20%20%3Findividual_entity%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20MINUS%20%7B%3Findividual_entity%20wdt%3AP131%20wd%3AQ2000769.%7D%0A%20%20MINUS%20%7B%3Foccupant%20wdt%3AP466%20wd%3AQ16959841.%7D%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Findividual_entity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -64,22 +64,12 @@ Completed Summer 2021
 <br>
 
 ### _**When were the UVic Campus Buildings built?**_
-### _**What does the UVic campus look like?**_
-### _**Which Campus Buildings are named after people?**_
-### _**When were the Campus Buildings dedicated and to whom?**_
-### _**Which Campus Buildings are named after women?**_
-### _**Which Campus Buildings are LEED Certified and where are they located?**_
-### _**What are the most common occupations of the Campus Building namesakes?**_
-### _**What awards and honours have the namesakes received?**_
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fitem%20%3Flaunchdate%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3FitemLabel%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Flaunchdate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%7D%0AGROUP%20BY%20%3Fitem%20%3FitemLabel%20%3Flaunchdate" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
-<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://w.wiki/3nxb" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
-
-<br>
-
-
-This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. 
+This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. Dates refer to when the buildings were built - not when they were dedicated to specific namesakes. In some instances, buildings have been renamed or had namesakes removed (e.g. Landsdown Residence #1, Fraser Building). All former namesakes are still included in this timeline. 
 
 Sources: 
 
@@ -88,7 +78,62 @@ Sources:
 UVic Campus component of University of Victoria Art Collections (UVAC) 2011 exhibit: [The Emergence of Architectual Modernism in Victoria](https://uvac.uvic.ca/Architecture_Exhibits/UVic_campus/)
 
 
+### _**What does the UVic campus look like?**_
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fimage%20%3Fcoordinate%0AWHERE%0A%7B%0A%20%20%20%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23%20instance%20of%20university%20building%20%0A%20%20%20%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113%20.%20%23%20owned%20by%20University%20of%20Victoria%0A%20%20%20%20%20%3Fitem%20wdt%3AP625%20%3Fcoordinate.%0A%20%20%20%20%20%3Fitem%20wdt%3AP18%20%3Fimage.%0A%0A%20%20%20%20%0A%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AORDER%20BY%20ASC%20(%3FitemLabel)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
 <br>
+
+Images of the  University of Victoria Campus are also available on Wikimedia Commons under the category: [University of Victoria campus](https://commons.wikimedia.org/wiki/Category:University_of_Victoria_campus).
+
+<br>
+
+### _**Which Campus Buildings are named after people?**_
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%23LEED%20Certified%20Buildings%20on%20UVic%20Campus%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fcoordinate_location%20%3Fcoordinate_locationLabel%20%0AWHERE%20%0A%7B%0A%20%20%23%20Item%20Property%20Value%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23%20all%20the%20items%20that%20have%20instance%20of%20value%20university%20building.%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%20%23%20and%20are%20located%20in%20Victoria%0A%20%20%3Fitem%20wdt%3AP1552%20wd%3AQ1521623.%20%23%20and%20have%20the%20quality%20'Leadership%20in%20Energy%20and%20Environmental%20Design%20%20%20%20%20%20%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%0AOPTIONAL%20%7B%20%3Fitem%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D%0A%0AORDER%20BY%20(%3Farea)%0A%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+### _**Which Campus Buildings are named after women?**_
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23UVic%20Campus%20Buildings%20with%20female%20namesakes%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Fnamesake%20%3FnamesakeLabel%20%3Fimage%20%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP21%20wd%3AQ6581072.%20%23%20and%20namesake%20gender%20is%20female%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0A%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+### _**Which Campus Buildings are LEED Certified and where are they located?**_
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23UVic%20Campus%20Buildings%20with%20female%20namesakes%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Fnamesake%20%3FnamesakeLabel%20%3Fimage%20%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP21%20wd%3AQ6581072.%20%23%20and%20namesake%20gender%20is%20female%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0A%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+Source: 
+
+[University of Victoria: Campus Planning and Sustainability](https://www.uvic.ca/sustainability/topics/buildings-grounds/index.php)
+
+### _**What roles and occupations did the Campus Building namesakes hold?**_
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20their%20listed%20occupations%20%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20listed%20occupations%0ASELECT%20DISTINCT%20%3FoccupationLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP106%20%3Foccupation%20.%20%23%20namesake%20with%20an%20occupation%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FoccupationLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" ></iframe>
+
+<br>
+
+### _**What awards and honours have the Campus Building namesakes received?**_
+
+<br>
+
+<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20awards%20they%20have%20received%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20awards%0ASELECT%20DISTINCT%20%3FawardLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP166%20%3Faward%20.%20%23%20namesake%20with%20an%20award%20%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FawardLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+### _**What Faculties, Departments, and Campus Building namesakes have holding at University of Victoria Special Collections and University Archives?**_
+
+<br>
+
+<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/#%23defaultView%3ATree%0A%23UVic%20Faculties%2C%20Departments%2C%20Buildings%2C%20Building%20namesakes%20whose%20archives%20are%20held%20at%20University%20of%20Victoria%20Special%20Collections%20and%20University%20Archives%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%0ASELECT%20%3Fbuilding%20%3FnamesakeLabel%20%3Ffaculty%20%3FfacultyLabel%20%3Fdepartment%20%3FdepartmentLabel%20%0AWHERE%20%7B%0A%20%20%7B%3Fbuilding%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Fbuilding%20wdt%3AP127%20wd%3AQ1458113.%20%23university%20building%0A%20%20%3Fbuilding%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%0A%20%20%3Ffaculty%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Fdepartment%20wdt%3AP31%20wd%3AQ2467461.%0A%20%20%3Fdepartment%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20DESC%20%28%3FbuildingLabel%29%20%3FfacultyLabel%20%3FdepartmentLabel%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+_This tree depicts all faculties, departments, and campus building namesakes who are the creators of fonds are located at UVic Special Collections and University Archives. Many of the campus building namesakes are subject access points for various fonds within UVic Archives, however they are not the creators of these fonds and thus, have been omitted from these search results._ 
+
 
 _SPARQL query used to generate the table:_
 
@@ -105,11 +150,4 @@ SELECT ?university_building ?inception WHERE {
 ----
 <br>
 
-### _**What are the occupations of the Campus Building namesakes?**_ 
 
-<iframe style="width: 55vw; height: 50vh; border: none;"
-src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20their%20listed%20occupations%20%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20listed%20occupations%0ASELECT%20DISTINCT%20%3FoccupationLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP106%20%3Foccupation%20.%20%23%20namesake%20with%20an%20occupation%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FoccupationLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
-This table depicts all known occupations for the namesakes of UVic campus buildings. 
-
-
-<br>
