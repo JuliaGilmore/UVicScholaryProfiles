@@ -2,13 +2,14 @@ Project by Julia Gilmore, Metadata Practicum Student, University of Victoria (UV
 
 Completed Summer 2021
 
-This project was designed as an Information Professional Practicum (IPP). The Information Professional Practicum is a work-integrated elective offered as part of the Master of Information (MI) program at the Faculty of Information (University of Toronto). 
+This project was designed as an Information Professional Practicum (IPP) and completed over three months as part of the Master of Information (MI) degree program at the Faculty of Information (University of Toronto).  
 
 The project was designed to support the creation of scholarly profiles and enhance the presence and discoverability of the University of Victoria in Wikidata. It is hoped that this project will demonstrate the potential applications of linked data for academic institutions and support future Wikidata initiatives at the University of Victoria. 
 
 Stage 1 - Population of UVic Faculties, Departments, Schools in Wikidata <br>
 
 Stage 2 - Population of UVic Campus Buildings and Building Namesakes <br>
+
 Stage 3 - Querying & Visualization of the completed Wikidata items 
 
 <i> Note: The creation of this page was inspired by a similar [Wikidata visualization page](https://yooylee.github.io/experiment-wikidata-canadian-archive-women-in-stem/) from the University of Ottawa's [Canadian Archive of Women in STEM](https://biblio.uottawa.ca/en/women-in-stem/about) project, and [SCUA Wikidata Experimentation](https://elizabethbassett.github.io/uvic-scua-wikidata-experimentation/), a visualization project connecting archival holdings at University of Victoria Special Collections and University Archives (SCUA) in Wikidata, completed by Elizabeth Bassett in July 2020. 
