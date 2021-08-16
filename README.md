@@ -2,6 +2,11 @@ Project by Julia Gilmore, Metadata Practicum Student, University of Victoria (UV
 
 Completed Summer 2021
 
+<i> Note: The creation of this page was inspired by a similar [Wikidata visualization page](https://yooylee.github.io/experiment-wikidata-canadian-archive-women-in-stem/) from the University of Ottawa's [Canadian Archive of Women in STEM](https://biblio.uottawa.ca/en/women-in-stem/about) project, and [SCUA Wikidata Experimentation](https://elizabethbassett.github.io/uvic-scua-wikidata-experimentation/), a visualization project connecting archival holdings at University of Victoria Special Collections and University Archives (SCUA) in Wikidata, completed by Elizabeth Bassett in July 2020. </i>
+<br>
+
+## Visualizing the University of Victoria (UVic) through Wikidata Queries  
+
 This project was designed as an Information Professional Practicum (IPP) and completed over three months as part of the Master of Information (MI) degree program at the Faculty of Information (University of Toronto).  
 
 The project was designed to support the creation of scholarly profiles and enhance the presence and discoverability of the University of Victoria in Wikidata. It is hoped that this project will demonstrate the potential applications of linked data for academic institutions and support future Wikidata initiatives at the University of Victoria. 
@@ -10,20 +15,14 @@ Stage 1 - Population of UVic Faculties, Departments, Schools in Wikidata <br>
 
 Stage 2 - Population of UVic Campus Buildings and Building Namesakes <br>
 
-Stage 3 - Querying & Visualization of the completed Wikidata items 
+Stage 3 - Querying & Visualization of the completed Wikidata items <br>
 
-<i> Note: The creation of this page was inspired by a similar [Wikidata visualization page](https://yooylee.github.io/experiment-wikidata-canadian-archive-women-in-stem/) from the University of Ottawa's [Canadian Archive of Women in STEM](https://biblio.uottawa.ca/en/women-in-stem/about) project, and [SCUA Wikidata Experimentation](https://elizabethbassett.github.io/uvic-scua-wikidata-experimentation/), a visualization project connecting archival holdings at University of Victoria Special Collections and University Archives (SCUA) in Wikidata, completed by Elizabeth Bassett in July 2020. 
-  
-The Wikimedia Foundation has developed an excellent tutorial for writing SPARQL queries, which was an invaluable resource for Stage 3 of the project. The tutorial can be accessed [here]( https://www.youtube.com/watch?v=kJph4q0Im98&ab_channel=WikimediaFoundation).</i>
-
+<i>The Wikimedia Foundation has developed an excellent tutorial for writing SPARQL queries, which was an invaluable resource for Stage 3 of the project. The tutorial can be accessed [here]( https://www.youtube.com/watch?v=kJph4q0Im98&ab_channel=WikimediaFoundation). </i>
 <br>
-
-## Visualizing the University of Victoria (UVic) through Wikidata Queries  
 
 ## Faculties and Academic Departments 
 ----  
-
-
+<br>
 ### _**Where are the headquarters for the UVic Faculties and Academic Departments located?**_
 
 <iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20%3Findividual_entity%20%3Findividual_entityLabel%20%3Fcoordinate_location%20%3Foccupant%20%3FoccupantLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Findividual_entity%20wdt%3AP466%20%3Foccupant.%0A%20%20%3Findividual_entity%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20MINUS%20%7B%3Findividual_entity%20wdt%3AP131%20wd%3AQ2000769.%7D%0A%20%20MINUS%20%7B%3Foccupant%20wdt%3AP466%20wd%3AQ16959841.%7D%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Findividual_entity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
