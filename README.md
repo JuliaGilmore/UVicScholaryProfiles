@@ -380,4 +380,14 @@ GROUP BY (?educationLabel)
 ORDER BY DESC (?Count)
 ```
 <br>
+## Looking Ahead - Future Paths for Working in Wikidata
+----  
+
+There are many possible directions to continue to expand the project beyond the scope of the practicum. These include but are not limited to:
+
+* Initiate a pilot project for populating scholarly profiles in Wikidata using existing items created for UVic Faculties and Departments 
+* Increase visual representation of the University of Victoria in Wikidata by:
+   * Adding digital objects from UVic Archives' [Historical Photograph Collection](https://archives.library.uvic.ca/hpc/index.php/) to Wikimedia Commons
+   * Encouraging UVic faculty, staff, and students to upload photos of the campus to Wikimedia Commons 
+* Increase presence of [Indigenous art at UVic](https://www.uvic.ca/services/indigenous/assets/docs/uvic-iace-indigenous-art-on-campus-brochure2.pdf) and Indigenous artists in Wikidata
 
