@@ -15,7 +15,7 @@ Completed Summer 2021
 
 ### _**Where are the headquarters for the UVic Faculties and Academic Departments located?**_
 
-<iframe style="width: 60vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20%3Findividual_entity%20%3Findividual_entityLabel%20%3Fcoordinate_location%20%3Foccupant%20%3FoccupantLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Findividual_entity%20wdt%3AP466%20%3Foccupant.%0A%20%20%3Findividual_entity%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20MINUS%20%7B%3Findividual_entity%20wdt%3AP131%20wd%3AQ2000769.%7D%0A%20%20MINUS%20%7B%3Foccupant%20wdt%3AP466%20wd%3AQ16959841.%7D%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Findividual_entity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20%3Findividual_entity%20%3Findividual_entityLabel%20%3Fcoordinate_location%20%3Foccupant%20%3FoccupantLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Findividual_entity%20wdt%3AP466%20%3Foccupant.%0A%20%20%3Findividual_entity%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20MINUS%20%7B%3Findividual_entity%20wdt%3AP131%20wd%3AQ2000769.%7D%0A%20%20MINUS%20%7B%3Foccupant%20wdt%3AP466%20wd%3AQ16959841.%7D%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Findividual_entity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -39,7 +39,7 @@ SELECT ?building ?buildingLabel ?coordinate_location ?occupant ?occupantLabel WH
 <br>
 ### _**What can I study at the University of Victoria?**_
 
-<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23%20What%20can%20I%20study%20at%20UVic%3F%20%0A%23%20instance%20of%20academic%20department%0A%23%20located%20in%20Victoria%0A%23%20has%20field%20of%20work%0A%0ASELECT%20DISTINCT%20%3FstudiesLabel%20%28COUNT%20%28%3Ffaculty%29%20as%20%3FCount%29%0AWHERE%0A%7B%0A%20%20%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%20%23faculty%0A%20%20%3Ffaculty%20wdt%3AP361%20wd%3AQ1458113.%20%23%20part%20of%20University%20of%20Victoria%0A%20%20%3Ffaculty%20wdt%3AP101%20%3Fstudies%20.%20%23%20field%20of%20work%0A%20%20%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D%20%0A%0AGROUP%20BY%20%28%3FstudiesLabel%29%20%0AORDER%20BY%20DESC%20%28%3FCount%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23%20What%20can%20I%20study%20at%20UVic%3F%20%0A%23%20instance%20of%20academic%20department%0A%23%20located%20in%20Victoria%0A%23%20has%20field%20of%20work%0A%0ASELECT%20DISTINCT%20%3FstudiesLabel%20%28COUNT%20%28%3Ffaculty%29%20as%20%3FCount%29%0AWHERE%0A%7B%0A%20%20%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%20%23faculty%0A%20%20%3Ffaculty%20wdt%3AP361%20wd%3AQ1458113.%20%23%20part%20of%20University%20of%20Victoria%0A%20%20%3Ffaculty%20wdt%3AP101%20%3Fstudies%20.%20%23%20field%20of%20work%0A%20%20%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D%20%0A%0AGROUP%20BY%20%28%3FstudiesLabel%29%20%0AORDER%20BY%20DESC%20%28%3FCount%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -71,7 +71,7 @@ ORDER BY DESC (?Count)
 
 ### _**Can you tell me more about the different UVic Faculties?**_
 
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3Fitem%20%3FitemLabel%20%3FlocationLabel%20%3FdepartmentLabel%0AWHERE%20%0A%7B%0A%20%20%23%20Item%20Property%20Value%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ180958.%20%23%20all%20the%20items%20that%20have%20instance%20of%20value%20faculty.%0A%20%20%3Fitem%20wdt%3AP361%20wd%3AQ1458113.%20%23%20and%20are%20part%20of%20the%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP276%20%3Flocation.%0A%20%20%3Fitem%20wdt%3AP527%20%3Fdepartment.%0A%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%0A%0A%7D%0A%0A%0A%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3Fitem%20%3FitemLabel%20%3FlocationLabel%20%3FdepartmentLabel%0AWHERE%20%0A%7B%0A%20%20%23%20Item%20Property%20Value%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ180958.%20%23%20all%20the%20items%20that%20have%20instance%20of%20value%20faculty.%0A%20%20%3Fitem%20wdt%3AP361%20wd%3AQ1458113.%20%23%20and%20are%20part%20of%20the%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP276%20%3Flocation.%0A%20%20%3Fitem%20wdt%3AP527%20%3Fdepartment.%0A%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%0A%0A%7D%0A%0A%0A%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 
 <br>
@@ -91,31 +91,7 @@ WHERE
 }
 ```
 <br>
-
-### _**Which UVic Faculties and Academic Departments are listed in LC and VIAF?**_
-
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3FLibrary_of_Congress_authority_IDLabel%20%3FVIAF_IDLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%7B%3Fitem%20wdt%3AP31%20wd%3AQ2467461.%7D%0A%20%20UNION%0A%20%20%7B%3Fitem%20wdt%3AP31%20wd%3AQ180958.%7D%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP244%20%3FLibrary_of_Congress_authority_ID.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP214%20%3FVIAF_ID.%20%7D%0A%7D%0AORDER%20BY%20DESC%20%28%3FLibrary_of_Congress_authority_IDLabel%29%20%28%3FVIAF_IDLabel%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
-
-
-<br>
-
-_SPARQL query used to generate the table:_
-```
-SELECT ?item ?itemLabel ?Library_of_Congress_authority_IDLabel ?VIAF_IDLabel WHERE {
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
- ?item wdt:P131 wd:Q2132.
-  {?item wdt:P31 wd:Q2467461.}
-  UNION
-  {?item wdt:P31 wd:Q180958.}
-  
-  OPTIONAL { ?item wdt:P244 ?Library_of_Congress_authority_ID. }
-  OPTIONAL { ?item wdt:P214 ?VIAF_ID. }
-}
-ORDER BY DESC (?Library_of_Congress_authority_IDLabel) (?VIAF_IDLabel)
-```
-<br>
-
-
+   
 ### _**Which undergraduate UVic Faculties have the most departments?**_
 
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23defaultView%3ABarChart%0A%0A%23UVic%20Faculties%20with%20most%20number%20of%20departments%0A%23%20instance%20of%20faculty%0A%23%20part%20of%20University%20of%20Victoria%0A%23%20has%20part%20-%20academic%20department%0A%0ASELECT%20DISTINCT%20%3FitemLabel%20%28COUNT%20%28%3Fdepartment%29%20as%20%3FCount%29%0AWHERE%0A%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ180958.%20%23faculty%0A%20MINUS%20%7B%3Fitem%20wdt%3AP31%20wd%3AQ11587546.%20%7D%20%23%20graduate%20faculty%0A%20%20%3Fitem%20wdt%3AP361%20wd%3AQ1458113.%20%23%20part%20of%20-%20University%20of%20Victoria%0A%20%20OPTIONAL%20%7B%3Fitem%20wdt%3AP527%20%3Fdepartment%20.%7D%20%23%20has%20part%20-%20academic%20department%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D%20%0A%0AGROUP%20BY%20%28%3FitemLabel%29%20%0AORDER%20BY%20DESC%20%28%3FCount%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
@@ -199,18 +175,18 @@ ORDER BY DESC (?Twitter_followers)
 ```
 <br>
 
-## Exploring the University of Victoria Campus 
+## Exploring the UVic Campus 
 ----  
 <br>
 
 ### _**When were the UVic Campus Buildings built?**_
 
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fitem%20%3Flaunchdate%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3FitemLabel%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Flaunchdate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%7D%0AGROUP%20BY%20%3Fitem%20%3FitemLabel%20%3Flaunchdate" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fitem%20%3Flaunchdate%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3FitemLabel%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Flaunchdate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%7D%0AGROUP%20BY%20%3Fitem%20%3FitemLabel%20%3Flaunchdate" ></iframe>
 
 <br>
 ---- 
 
-This timeline depicts all Campus Buildings where dates of inception are known. The list is not exhaustive, as information for some Campus Buildings was not publicly available at the time of the project. Dates refer to when the buildings were built - not when they were dedicated to specific namesakes. In some instances, buildings have been renamed or had namesakes removed (e.g. Landsdown Residence #1, Fraser Building). All former namesakes are still included in this timeline. _______
+This timeline depicts all Campus Buildings where dates of inception are known. Note that the timeline visualization for SPARQL queries defaults to January 1, XXXX for items where inception is provided with precision of a year. More detailed start dates are available for buildings dedicated to namesakes (see below). 
 
 Sources: 
 
@@ -235,9 +211,35 @@ GROUP BY ?item ?itemLabel ?inception
 ```
 <br>
 
+### _**In which decades were the Campus Buildings built?**_
+
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20%3Fitem%20%3FitemLabel%20((xsd%3Ainteger(YEAR(%3Finceptiondate%20)%2F%201))%20*%201%20AS%20%3Finception_year)%20((xsd%3Ainteger(YEAR(%3Finceptiondate%20)%2F%2010))%20*%2010%20AS%20%3Finception_decade)%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3Fcoordinate%20(%3Finception_decade%20AS%20%3Flayer)%20%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Finceptiondate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20%3Fitem%20wdt%3AP625%20%3Fcoordinate.%0A%7D%0AGROUP%20BY%20%3Finceptiondate%20%3Fitem%20%3FitemLabel%20%3Fcoordinate%0AORDER%20BY%20ASC%20(%3Finceptiondate)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+_SPARQL query used to generate the table:_
+```
+SELECT ?item ?itemLabel ((xsd:integer(YEAR(?inceptiondate )/ 1)) * 1 AS ?inception_year) ((xsd:integer(YEAR(?inceptiondate )/ 10)) * 10 AS ?inception_decade) (SAMPLE(?image) AS ?image) ?coordinate (?inception_decade AS ?layer)  WHERE {
+  ?item wdt:P31 wd:Q19844914;
+    wdt:P571 ?inceptiondate.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  OPTIONAL { ?item wdt:P18 ?image. }
+  
+  ?item wdt:P131 wd:Q2132.
+  ?item wdt:P127 wd:Q1458113.
+  ?item wdt:P625 ?coordinate.
+}
+GROUP BY ?inceptiondate ?item ?itemLabel ?coordinate
+ORDER BY ASC (?inceptiondate)
+```
+<br>
+---- 
+
+This query incorporates multiple layers to represent different decades of Campus Building construction (1940-2010). The resulting colour-coded map indicates that the most significant period of campus development occurred during the 1960s, followed by the 2000s. Campus development was also more centralized around Ring Road during the 1960s. Building additions and extensions are not represented in this query. 
+
 ### _**What does the UVic campus look like?**_
 
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fimage%20%3Fcoordinate%0AWHERE%0A%7B%0A%20%20%20%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23%20instance%20of%20university%20building%20%0A%20%20%20%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113%20.%20%23%20owned%20by%20University%20of%20Victoria%0A%20%20%20%20%20%3Fitem%20wdt%3AP625%20%3Fcoordinate.%0A%20%20%20%20%20%3Fitem%20wdt%3AP18%20%3Fimage.%0A%0A%20%20%20%20%0A%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AORDER%20BY%20ASC%20(%3FitemLabel)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fimage%20%3Fcoordinate%0AWHERE%0A%7B%0A%20%20%20%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23%20instance%20of%20university%20building%20%0A%20%20%20%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113%20.%20%23%20owned%20by%20University%20of%20Victoria%0A%20%20%20%20%20%3Fitem%20wdt%3AP625%20%3Fcoordinate.%0A%20%20%20%20%20%3Fitem%20wdt%3AP18%20%3Fimage.%0A%0A%20%20%20%20%0A%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AORDER%20BY%20ASC%20(%3FitemLabel)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 ----
 
@@ -261,54 +263,9 @@ ORDER BY ASC (?buildingLabel)
 ```
 <br>
 
-
-### _**Which Campus Buildings are named after people?**_
-
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fitem%20%3Finception%20%3Fnamesake%20%3FnamesakeLabel%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3FitemLabel%20%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Finception%3B%0A%20%20%20%20%20%20%20%20wdt%3AP138%20%3Fnamesake%3B%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20%0A%7D%0AGROUP%20BY%20%3Fitem%20%3FitemLabel%20%3Finception%20%3Fnamesake%20%3FnamesakeLabel" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
-
-<br>
-
-_SPARQL query used to generate the table:_
-```
-SELECT ?building ?inception ?namesake ?namesakeLabel (SAMPLE(?image) AS ?image) ?buildingLabel  WHERE {
-  ?building wdt:P31 wd:Q19844914; # instance of university building
-    wdt:P571 ?inception;
-        wdt:P138 ?namesake;
-
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-  OPTIONAL { ?building wdt:P18 ?image. }
-
-  ?building wdt:P127 wd:Q1458113. # and are owned by University of Victoria
-}
-GROUP BY ?building ?buildingLabel ?inception ?namesake ?namesakeLabel
-```
-<br>
-
-### _**Which Campus Buildings are named after women?**_
-
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23UVic%20Campus%20Buildings%20with%20female%20namesakes%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Fnamesake%20%3FnamesakeLabel%20%3Fimage%20%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP21%20wd%3AQ6581072.%20%23%20and%20namesake%20gender%20is%20female%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0A%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
-
-<br>
-
-_SPARQL query used to generate the table:_
-```
-SELECT DISTINCT ?item ?itemLabel ?namesake ?namesakeLabel ?image 
-WHERE {
-  ?item wdt:P31 wd:Q19844914. #university building
-  ?item  wdt:P127 wd:Q1458113. # owned by - University of Victoria
-  ?item wdt:P138 ?namesake . # who have 'a' namesake
-  ?namesake wdt:P21 wd:Q6581072. # and namesake gender is female
-  
-  OPTIONAL { ?item wdt:P18 ?image. }
-
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}
-```
-<br>
-
 ### _**Which Campus Buildings are LEED Certified and where are they located?**_
 
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23UVic%20Campus%20Buildings%20with%20female%20namesakes%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Fnamesake%20%3FnamesakeLabel%20%3Fimage%20%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP21%20wd%3AQ6581072.%20%23%20and%20namesake%20gender%20is%20female%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0A%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%23LEED%20Certified%20Buildings%20on%20UVic%20Campus%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fcoordinate_location%20%3Fcoordinate_locationLabel%20%0AWHERE%20%0A%7B%0A%20%20%23%20Item%20Property%20Value%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23%20all%20the%20items%20that%20have%20instance%20of%20value%20university%20building.%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%20%23%20and%20are%20located%20in%20Victoria%0A%20%20%3Fitem%20wdt%3AP1552%20wd%3AQ1521623.%20%23%20and%20have%20the%20quality%20'Leadership%20in%20Energy%20and%20Environmental%20Design%20%20%20%20%20%20%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%0AOPTIONAL%20%7B%20%3Fitem%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D%0A%0AORDER%20BY%20(%3Farea)%0A%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 ----
@@ -316,6 +273,85 @@ WHERE {
 Source: 
 
 [University of Victoria: Campus Planning and Sustainability](https://www.uvic.ca/sustainability/topics/buildings-grounds/index.php)
+
+<br>
+
+_SPARQL query used to generate the table:_
+```
+SELECT ?item ?itemLabel ?coordinate_location ?coordinate_locationLabel 
+WHERE 
+{
+  # Item Property Value
+  ?item wdt:P31 wd:Q19844914. # all the items that have instance of value university building.
+  ?item wdt:P131 wd:Q2132. # and are located in Victoria
+  ?item wdt:P1552 wd:Q1521623. # and have the quality 'Leadership in Energy and Environmental Design      
+  
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+OPTIONAL { ?item wdt:P625 ?coordinate_location. }
+}
+```
+<br>
+
+### _**What are some of the distinguishing features of the various Campus Buildings?**_
+
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20features%20%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20building%20'has%20part'%0ASELECT%20DISTINCT%20%3FhaspartLabel%20(COUNT%20(%3Fitem)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP527%20%3Fhaspart%20.%20%23%20who%20has%20a%20part%20(e.g.%20laboratory%2C%20green%20roof%2C%20theatre)%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FhaspartLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+<br>
+
+_SPARQL query used to generate the table:_
+```
+SELECT DISTINCT ?haspartLabel (COUNT (?item) as ?Count)
+WHERE {
+  ?item wdt:P31 wd:Q19844914. #university building
+  ?item  wdt:P127 wd:Q1458113. # owned by - University of Victoria
+  ?item wdt:P527 ?haspart . # who has a part (e.g. laboratory, green roof, theatre)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+GROUP BY (?haspartLabel)
+ORDER BY DESC (?Count)
+```
+<br>
+
+## What's In A Namesake?
+----  
+<br>
+
+### _**Which Campus Buildings are or were formerly named after people?**_
+
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0ASELECT%20%20%3Fnamesake%20%3FnamesakeLabel%20%3Fdedication_start%20%3Fdedication_end%20%3Fimage%20((xsd%3Ainteger(YEAR(%3Finception%20)%2F%201))%20*%201%20AS%20%3Finception_year)%20%3Fbuilding%20%3FbuildingLabel%20WHERE%0A%0A%7B%0A%3Fbuilding%20wdt%3AP31%20wd%3AQ19844914%20.%0A%3Fbuilding%20wdt%3AP127%20wd%3AQ1458113.%0A%3Fbuilding%20wdt%3AP138%20%3Fnamesake.%0A%3Fbuilding%20wdt%3AP571%20%3Finception.%20%20%0A%3Fbuilding%20p%3AP138%20%3Fstatement%20.%20%0A%20%20%3Fstatement%20ps%3AP138%20%3Fnamesake.%0A%20%20OPTIONAL%7B%3Fstatement%20pq%3AP580%20%3Fdedication_start.%7D%0A%20%20OPTIONAL%7B%3Fstatement%20pq%3AP582%20%3Fdedication_end.%7D%0A%20%20OPTIONAL%7B%3Fbuilding%20wdt%3AP18%20%3Fimage.%7D%0A%0ASERVICE%20wikibase%3Alabel%20%7Bbd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AORDER%20BY%20%3Finception%20%3Fdedication_start%20%3Fdedication_end" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+_SPARQL query used to generate the table:_
+```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT  ?namesake ?namesakeLabel ?dedication_start ?dedication_end ?image ((xsd:integer(YEAR(?inception )/ 1)) * 1 AS ?inception_year) ?building ?buildingLabel WHERE
+
+{
+?building wdt:P31 wd:Q19844914 .
+?building wdt:P127 wd:Q1458113.
+?building wdt:P138 ?namesake.
+?building wdt:P571 ?inception.  
+?building p:P138 ?statement . 
+  ?statement ps:P138 ?namesake.
+  OPTIONAL{?statement pq:P580 ?dedication_start.}
+  OPTIONAL{?statement pq:P582 ?dedication_end.}
+  OPTIONAL{?building wdt:P18 ?image.}
+
+SERVICE wikibase:label {bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ?inception ?dedication_start ?dedication_end
+```
+<br>
+----
+
+This timeline visualization depicts former and current namesakes for various campus buildings and the complete calendar start and end dates for these dedications. Buildings without namesakes are not represented in this query. Only dedication start dates are listed for current building namesakes. The separate year (without month or day) refers to when the building was opened (P571: inception). 
+
+### _**Which Campus Buildings are named after women?**_
+
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/#%23UVic%20Campus%20Buildings%20with%20female%20namesakes%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Fnamesake%20%3FnamesakeLabel%20%3Fimage%20%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP21%20wd%3AQ6581072.%20%23%20and%20namesake%20gender%20is%20female%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0A%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -337,7 +373,7 @@ WHERE {
 
 ### _**What occupations and roles have the Campus Building namesakes held?**_
 
-<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20their%20listed%20occupations%20%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20listed%20occupations%0ASELECT%20DISTINCT%20%3FoccupationLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP106%20%3Foccupation%20.%20%23%20namesake%20with%20an%20occupation%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FoccupationLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" ></iframe>
+<iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20their%20listed%20occupations%20%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20listed%20occupations%0ASELECT%20DISTINCT%20%3FoccupationLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP106%20%3Foccupation%20.%20%23%20namesake%20with%20an%20occupation%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FoccupationLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" ></iframe>
 
 <br>
 
@@ -379,9 +415,9 @@ ORDER BY DESC (?Count)
 ```
 <br>
 
-### _**What Faculties, Departments, and Campus Building namesakes have holding at University of Victoria Special Collections and University Archives?**_
+### _**What Faculties, Departments, and Campus Building namesakes have holdings at University of Victoria Special Collections and University Archives?**_
 
-<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/#%23defaultView%3ATree%0A%23UVic%20Faculties%2C%20Departments%2C%20Buildings%2C%20Building%20namesakes%20whose%20archives%20are%20held%20at%20University%20of%20Victoria%20Special%20Collections%20and%20University%20Archives%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%0ASELECT%20%3Fbuilding%20%3FnamesakeLabel%20%3Ffaculty%20%3FfacultyLabel%20%3Fdepartment%20%3FdepartmentLabel%20%0AWHERE%20%7B%0A%20%20%7B%3Fbuilding%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Fbuilding%20wdt%3AP127%20wd%3AQ1458113.%20%23university%20building%0A%20%20%3Fbuilding%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20%27a%27%20namesake%0A%20%20%3Fnamesake%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%0A%20%20%3Ffaculty%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Fdepartment%20wdt%3AP31%20wd%3AQ2467461.%0A%20%20%3Fdepartment%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20DESC%20%28%3FbuildingLabel%29%20%3FfacultyLabel%20%3FdepartmentLabel%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATree%0A%23UVic%20Faculties%2C%20Departments%2C%20Buildings%2C%20Building%20namesakes%20whose%20archives%20are%20held%20at%20University%20of%20Victoria%20Special%20Collections%20and%20University%20Archives%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%0ASELECT%20%3Fbuilding%20%3FnamesakeLabel%20%3Ffaculty%20%3FfacultyLabel%20%3Fdepartment%20%3FdepartmentLabel%20%0AWHERE%20%7B%0A%20%20%7B%3Fbuilding%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Fbuilding%20wdt%3AP127%20wd%3AQ1458113.%20%23university%20building%0A%20%20%3Fbuilding%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Ffaculty%20wdt%3AP31%20wd%3AQ180958.%0A%20%20%3Ffaculty%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%20%20UNION%0A%20%20%7B%3Fdepartment%20wdt%3AP31%20wd%3AQ2467461.%0A%20%20%3Fdepartment%20wdt%3AP485%20wd%3AQ47518588.%7D%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20DESC%20(%3FbuildingLabel)%20%3FfacultyLabel%20%3FdepartmentLabel%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
 <br>
 ----
