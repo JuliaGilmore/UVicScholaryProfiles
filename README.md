@@ -393,3 +393,7 @@ There are many possible directions to continue to expand the project beyond the 
 * Increase visual representation of the University of Victoria in Wikidata by:
    * Adding digital objects from UVic Archives' [Historical Photograph Collection](https://archives.library.uvic.ca/hpc/index.php/) to Wikimedia Commons
    * Encouraging UVic faculty, staff, and students to upload photos of the campus to Wikimedia Commons 
+
+* Represent namesakes with archival holdings in SNAC (Social Networks and Archival Context) and connect to Wikidata using the SNAC ARK ID property (P3430)
+   * Explore possibility of [SNAC Cooperative Membership](https://portal.snaccooperative.org/node/483) for University of Victoria Special Collections and 
+     University Archives 
