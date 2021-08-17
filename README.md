@@ -17,7 +17,7 @@ Stage 2 - Population of UVic Campus Buildings and Building Namesakes <br>
 
 Stage 3 - Querying & Visualization of the completed Wikidata items <br>
 
-_The Wikimedia Foundation has developed an excellent tutorial for writing SPARQL queries, which was an invaluable resource for Stage 3 of the project. The tutorial can be accessed [here]( https://www.youtube.com/watch?v=kJph4q0Im98&ab_channel=WikimediaFoundation)._ </i>
+_The Wikimedia Foundation has developed an excellent tutorial for writing SPARQL queries, which was an invaluable resource for Stage 3 of the project. The tutorial can be accessed [here]( https://www.youtube.com/watch?v=kJph4q0Im98&ab_channel=WikimediaFoundation)._
 <br>
 
 ### Faculties and Academic Departments 
