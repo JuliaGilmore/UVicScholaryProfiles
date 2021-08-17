@@ -151,7 +151,7 @@ ORDER BY DESC (?Twitter_followers)
 <iframe style="width: 65vw; height: 60vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fitem%20%3Flaunchdate%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3FitemLabel%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Flaunchdate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%7D%0AGROUP%20BY%20%3Fitem%20%3FitemLabel%20%3Flaunchdate" ></iframe>
 
 <br>
-This timeline depicts all Campus Buildings where dates of inception are known. Note that the timeline visualization for SPARQL queries defaults to January 1, XXXX for items where inception is provided with precision of a year. More detailed start dates are available for buildings dedicated to namesakes (see below). 
+This timeline depicts all campus buildings where dates of inception are known. Note that the timeline visualization for SPARQL queries defaults to January 1, XXXX for items where inception is provided with precision of a year. More detailed start dates are available for buildings dedicated to namesakes (see below). 
 
 Sources: 
 
@@ -267,7 +267,7 @@ GROUP BY ?inceptiondate ?item ?itemLabel ?coordinate
 ORDER BY ASC (?inceptiondate)
 ```
 <br>
-This query incorporates multiple layers to represent different decades of Campus Building construction (1940-2010). The resulting colour-coded map indicates that the most significant period of campus development occurred during the 1960s, followed by the 2000s. Campus development was also more centralized around Ring Road during the 1960s. Building additions and extensions are not represented in this query. 
+This query incorporates multiple layers to represent different decades for construction of the UVic campus (1940-2010). The resulting colour-coded map indicates that the most significant period of campus growth occurred during the 1960s, followed by the 2000s. Campus development was also more centralized around Ring Road during the 1960s. Building additions and extensions are not represented in this query. 
 <br>
 ### What's In A Namesake?
 <br> 
