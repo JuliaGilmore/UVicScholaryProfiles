@@ -7,9 +7,9 @@ _Note: The creation of this page was inspired by a similar [Wikidata visualizati
 
 ## Visualizing the University of Victoria (UVic) through Wikidata Queries  
 
-This project was designed as an Information Professional Practicum (IPP) and completed over three months as part of the Master of Information (MI) degree program at the Faculty of Information (University of Toronto).  
+This project was designed for an Information Professional Practicum (IPP) as part of the Master of Information (MI) degree program at the Faculty of Information (University of Toronto). The goal of the project was to support the creation of scholarly profiles and enhance the presence and discoverability of the University of Victoria in Wikidata. It is hoped that the project findings will demonstrate the potential applications of linked data for academic institutions and support future Wikidata initiatives at the University of Victoria.  
 
-The project was designed to support the creation of scholarly profiles and enhance the presence and discoverability of the University of Victoria in Wikidata. It is hoped that this project will demonstrate the potential applications of linked data for academic institutions and support future Wikidata initiatives at the University of Victoria. 
+The practicum was completed in three stages over the course of July - August 2021, under the direction and supervision of Dean Seaman, Head of Metadata, University of Victoria Libraries. 
 
 Stage 1 - Population of UVic Faculties, Departments, Schools in Wikidata <br>
 
@@ -381,7 +381,7 @@ GROUP BY (?educationLabel)
 ORDER BY DESC (?Count)
 ```
 <br>
-### Looking Ahead - Future Directions for Working in Wikidata
+### Looking Ahead - Future Directions for Working with Wikidata at UVic Libraries
 ----  
 There are many possible directions to continue to expand the project beyond the scope of the practicum. These include but are not limited to:
 
