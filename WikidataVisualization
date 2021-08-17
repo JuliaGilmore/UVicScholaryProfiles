@@ -1,6 +1,5 @@
-Project by Julia Gilmore, University of Victoria Libraries Metadata Assistant | July 2020
+Project by Julia Gilmore, Metadata Practicum Student, University of Victoria (UVic) Libraries
 
-The goal of this project is to experiment with ways that the University of Victoria (UVic) Libraries can utilize Wikidata to support the creation of scholarly profiles. The following visualizations use SPARQL queries and the Wikidata Query Service to compile information about people and institutions that have fonds, collections, and correspondence held at UVIC SCUA. As more instances of the "archives at" (P485) property are used to connect SCUA with people and institutions with pages on Wikidata, the visualizations will become more representative of the Archives' holdings.
 
 Note: The creation of this page was inspired by a similar Wikidata visualization page from the University of Ottawa's Canadian Archive of Women in STEM project.
 
