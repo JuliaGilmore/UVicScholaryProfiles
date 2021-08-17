@@ -26,7 +26,7 @@ _The Wikimedia Foundation has developed an excellent tutorial for writing SPARQL
 
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20%3Findividual_entity%20%3Findividual_entityLabel%20%3Fcoordinate_location%20%3Foccupant%20%3FoccupantLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Findividual_entity%20wdt%3AP31%20wd%3AQ19844914.%0A%20%20%3Findividual_entity%20wdt%3AP466%20%3Foccupant.%0A%20%20%3Findividual_entity%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20MINUS%20%7B%3Findividual_entity%20wdt%3AP131%20wd%3AQ2000769.%7D%0A%20%20MINUS%20%7B%3Foccupant%20wdt%3AP466%20wd%3AQ16959841.%7D%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Findividual_entity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 <br>
-To create this map visualization, campus buildings were used as the starting point (as they have defined coordinates, while the faculties and departments do not). During the Wikidata population stage of this project, faculties and departments were connected to campus buildings using P466 - occupant. Using this property (P466) as a query condition allows faculties and departments to appear in the SPARQL results and be matched to the appropriate buildings. Any other organizations (e.g. Ocean Networks Canada) listed as occupants were omitted from the search using the MINUS function.  
+To create this map visualization, campus buildings were used as the starting point (as they have defined coordinates, while the faculties and departments do not). During the Wikidata population stage of this project, faculties and departments were connected to campus buildings using P466 (occupant). Using this property as a query condition allows faculties and departments to appear in the SPARQL results and be matched to the appropriate buildings. Any other organizations (e.g. Ocean Networks Canada) listed as occupants were omitted from the search using the MINUS function.  
 <br>
 
 __SPARQL query used to generate the table:_
@@ -179,7 +179,7 @@ GROUP BY ?item ?itemLabel ?inception
 <iframe style="width: 60vw; height: 60vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fimage%20%3Fcoordinate%0AWHERE%0A%7B%0A%20%20%20%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23%20instance%20of%20university%20building%20%0A%20%20%20%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113%20.%20%23%20owned%20by%20University%20of%20Victoria%0A%20%20%20%20%20%3Fitem%20wdt%3AP625%20%3Fcoordinate.%0A%20%20%20%20%20%3Fitem%20wdt%3AP18%20%3Fimage.%0A%0A%20%20%20%20%0A%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AORDER%20BY%20ASC%20(%3FitemLabel)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 ----
 <br>
-Images of the  University of Victoria Campus are also available on Wikimedia Commons under the category: [University of Victoria campus](https://commons.wikimedia.org/wiki/Category:University_of_Victoria_campus).
+Images of the  University of Victoria Campus are also available in Wikimedia Commons under the category: [University of Victoria campus](https://commons.wikimedia.org/wiki/Category:University_of_Victoria_campus).
 
 <br>
 _SPARQL query used to generate the table:_
@@ -202,7 +202,8 @@ ORDER BY ASC (?buildingLabel)
 
 <iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%23LEED%20Certified%20Buildings%20on%20UVic%20Campus%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fcoordinate_location%20%3Fcoordinate_locationLabel%20%0AWHERE%20%0A%7B%0A%20%20%23%20Item%20Property%20Value%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23%20all%20the%20items%20that%20have%20instance%20of%20value%20university%20building.%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%20%23%20and%20are%20located%20in%20Victoria%0A%20%20%3Fitem%20wdt%3AP1552%20wd%3AQ1521623.%20%23%20and%20have%20the%20quality%20'Leadership%20in%20Energy%20and%20Environmental%20Design%20%20%20%20%20%20%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%0AOPTIONAL%20%7B%20%3Fitem%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%0A%7D%0A%0AORDER%20BY%20(%3Farea)%0A%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 <br>
-----
+The property P1552 (has quality) was selected to indicate LEED certification after performing sample queries to see how this statement appeared most often across Wikidata. 
+
 Source: 
 
 [University of Victoria: Campus Planning and Sustainability](https://www.uvic.ca/sustainability/topics/buildings-grounds/index.php)
@@ -243,6 +244,8 @@ GROUP BY (?haspartLabel)
 ORDER BY DESC (?Count)
 ```
 <br>
+See below (Looking Ahead) for additional suggestions for enhancing this query. 
+
 #### _**How has the UVic campus grown over time?**_
 
 <iframe style="width: 55vw; height: 60vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20%3Fitem%20%3FitemLabel%20((xsd%3Ainteger(YEAR(%3Finceptiondate%20)%2F%201))%20*%201%20AS%20%3Finception_year)%20((xsd%3Ainteger(YEAR(%3Finceptiondate%20)%2F%2010))%20*%2010%20AS%20%3Finception_decade)%20(SAMPLE(%3Fimage)%20AS%20%3Fimage)%20%3Fcoordinate%20(%3Finception_decade%20AS%20%3Flayer)%20%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914%3B%0A%20%20%20%20wdt%3AP571%20%3Finceptiondate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20%0A%20%20%3Fitem%20wdt%3AP131%20wd%3AQ2132.%0A%20%20%3Fitem%20wdt%3AP127%20wd%3AQ1458113.%0A%20%20%3Fitem%20wdt%3AP625%20%3Fcoordinate.%0A%7D%0AGROUP%20BY%20%3Finceptiondate%20%3Fitem%20%3FitemLabel%20%3Fcoordinate%0AORDER%20BY%20ASC%20(%3Finceptiondate)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
@@ -358,7 +361,7 @@ ORDER BY DESC (?Count)
 ```
 <br>
 
-#### _**What universities and colleges did the Campus Building namesakes graduate from?**_
+#### _**Where were the Campus Building namesakes educated?**_
 
 <iframe style="width: 60vw; height: 85vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20where%20they%20studied%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20listed%20places%20of%20education%0ASELECT%20DISTINCT%20%3FeducationLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP69%20%3Feducation%20.%20%23%20and%20where%20the%20namesake%20was%20educated%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FeducationLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
@@ -382,10 +385,11 @@ ORDER BY DESC (?Count)
 ----  
 There are many possible directions to continue to expand the project beyond the scope of the practicum. These include but are not limited to:
 
-* Initiate a pilot project for populating scholarly profiles in Wikidata using existing items created for UVic Faculties and Departments 
+* Initiate a pilot project for populating scholarly profiles for UVic faculty members in Wikidata
+   * Connect Wikidata items created for UVic Faculties and Departments during this project
+
+* Increase presence of [Indigenous art at UVic](https://www.uvic.ca/services/indigenous/assets/docs/uvic-iace-indigenous-art-on-campus-brochure2.pdf) and representation of Indigenous artists and art forms in Wikidata
 
 * Increase visual representation of the University of Victoria in Wikidata by:
    * Adding digital objects from UVic Archives' [Historical Photograph Collection](https://archives.library.uvic.ca/hpc/index.php/) to Wikimedia Commons
    * Encouraging UVic faculty, staff, and students to upload photos of the campus to Wikimedia Commons 
-* Increase presence of [Indigenous art at UVic](https://www.uvic.ca/services/indigenous/assets/docs/uvic-iace-indigenous-art-on-campus-brochure2.pdf) and Indigenous artists in Wikidata
-
