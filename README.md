@@ -59,6 +59,7 @@ Note: A separate query was performed for UVic Academic Departments and can be vi
 __SPARQL query used to generate the table:__
 
 ```
+#defaultview:BubbleChart
 SELECT DISTINCT ?studiesLabel (COUNT (?faculty) as ?Count)
 WHERE
 {
@@ -72,6 +73,7 @@ WHERE
 
 GROUP BY (?studiesLabel) 
 ORDER BY DESC (?Count)
+LIMIT 25
 ```
 <br>
 #### _**Can you tell me more about the different UVic Faculties?**_
@@ -358,6 +360,7 @@ WHERE {
 }
 GROUP BY (?fieldofworkLabel)
 ORDER BY DESC (?Count)
+LIMIT 25
 ```
 <br>
 
