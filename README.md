@@ -32,6 +32,7 @@ To create this map visualization, campus buildings were used as the starting poi
 __SPARQL query used to generate the table:_
 _
 ```
+#defaultView:Map
 SELECT ?building ?buildingLabel ?coordinate_location ?occupant ?occupantLabel WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
   ?building wdt:P31 wd:Q19844914.
@@ -59,7 +60,7 @@ Note: A separate query was performed for UVic Academic Departments and can be vi
 __SPARQL query used to generate the table:__
 
 ```
-#defaultview:BubbleChart
+#defaultView:BubbleChart
 SELECT DISTINCT ?studiesLabel (COUNT (?faculty) as ?Count)
 WHERE
 {
@@ -102,6 +103,7 @@ WHERE
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:Table
 SELECT ?item ?itemLabel ?Twitter_usernameLabel ?Facebook_IDLabel ?Instagram_usernameLabel 
 WHERE 
 {
@@ -126,6 +128,7 @@ ORDER BY DESC (?Twitter_usernameLabel) (?Facebook_IDLabel)
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:Table
 SELECT ?item ?itemLabel ?Twitter_followers
 WHERE
 {
@@ -164,6 +167,7 @@ UVic Campus component of University of Victoria Art Collections (UVAC) 2011 exhi
 
 _SPARQL query used to generate the table:_
 ```
+#defaultView:Timeline
 SELECT ?item ?inception (SAMPLE(?image) AS ?image) ?itemLabel WHERE {
   ?item wdt:P31 wd:Q19844914;
     wdt:P571 ?inception.
@@ -186,6 +190,7 @@ Images of the  University of Victoria Campus are also available in Wikimedia Com
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:ImageGrid
 SELECT ?building ?buildingLabel ?image ?coordinate
 WHERE
 {
@@ -213,6 +218,7 @@ Source:
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:Map
 SELECT ?item ?itemLabel ?coordinate_location ?coordinate_locationLabel 
 WHERE 
 {
@@ -234,6 +240,7 @@ OPTIONAL { ?item wdt:P625 ?coordinate_location. }
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:BubbleChart
 SELECT DISTINCT ?haspartLabel (COUNT (?item) as ?Count)
 WHERE {
   ?item wdt:P31 wd:Q19844914. #university building
@@ -255,6 +262,7 @@ See below (Looking Ahead) for additional suggestions for enhancing this query.
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:Timeline
 SELECT ?item ?itemLabel ((xsd:integer(YEAR(?inceptiondate )/ 1)) * 1 AS ?inception_year) ((xsd:integer(YEAR(?inceptiondate )/ 10)) * 10 AS ?inception_decade) (SAMPLE(?image) AS ?image) ?coordinate (?inception_decade AS ?layer)  WHERE {
   ?item wdt:P31 wd:Q19844914;
     wdt:P571 ?inceptiondate.
@@ -280,6 +288,7 @@ This query incorporates multiple layers to represent different decades for const
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:Timeline
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT  ?namesake ?namesakeLabel ?dedication_start ?dedication_end ?image ((xsd:integer(YEAR(?inception )/ 1)) * 1 AS ?inception_year) ?building ?buildingLabel WHERE
 
@@ -309,6 +318,7 @@ This timeline visualization depicts former and current namesakes for various cam
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:Tree
 SELECT DISTINCT ?item ?itemLabel ?namesake ?namesakeLabel ?image 
 WHERE {
   ?item wdt:P31 wd:Q19844914. #university building
@@ -329,7 +339,7 @@ WHERE {
 <br>
 _SPARQL query used to generate the table:_
 ```
-#defaultview:BubbleChart
+#defaultView:BubbleChart
 SELECT DISTINCT ?occupationLabel (COUNT (?namesake) as ?Count)
 WHERE {
   ?item wdt:P31 wd:Q19844914. #university building
@@ -346,11 +356,12 @@ LIMIT 30
 <br>
 ### _**What fields have the Campus Building namesakes contributed to?**_
 
-<iframe style="width: 60vw; height: 85vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0A%23UVic%20Campus%20Buildings%20with%20namesakes%20and%20their%20listed%20fields%20of%20work%20%0A%23%20instance%20of%20university%20building%0A%23%20owned%20by%20University%20of%20Victoria%0A%23%20namesake%0A%23%20namesakes%20with%20listed%20fields%20of%20work%0ASELECT%20DISTINCT%20%3FfieldofworkLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP101%20%3Ffieldofwork%20.%20%23%20namesake%20with%20an%20occupation%0A%20%20MINUS%20%7B%3Fitem%20wdt%3AP3032%20wd%3AQ107578887.%7D%20%23%20adjacent%20building%20-%20Saunders%20Annex%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FfieldofworkLabel)%0AORDER%20BY%20DESC%20(%3FCount)%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+<iframe style="width: 60vw; height: 85vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0ASELECT%20DISTINCT%20%3FoccupationLabel%20(COUNT%20(%3Fnamesake)%20as%20%3FCount)%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ19844914.%20%23university%20building%0A%20%20%3Fitem%20%20wdt%3AP127%20wd%3AQ1458113.%20%23%20owned%20by%20-%20University%20of%20Victoria%0A%20%20%3Fitem%20wdt%3AP138%20%3Fnamesake%20.%20%23%20who%20have%20'a'%20namesake%0A%20%20%3Fnamesake%20wdt%3AP106%20%3Foccupation%20.%20%23%20namesake%20with%20an%20occupation%0AMINUS%20%7B%3Fitem%20wdt%3AP3032%20wd%3AQ107578887.%7D%20%23%20adjacent%20building%20-%20Saunders%20Annex%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AGROUP%20BY%20(%3FoccupationLabel)%0AORDER%20BY%20DESC%20(%3FCount)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:BubbleChart
 SELECT DISTINCT ?fieldofworkLabel (COUNT (?namesake) as ?Count)
 WHERE {
   ?item wdt:P31 wd:Q19844914. #university building
@@ -362,7 +373,6 @@ WHERE {
 }
 GROUP BY (?fieldofworkLabel)
 ORDER BY DESC (?Count)
-LIMIT 25
 ```
 <br>
 
@@ -373,6 +383,7 @@ LIMIT 25
 <br>
 _SPARQL query used to generate the table:_
 ```
+#defaultView:BubbleChart
 SELECT DISTINCT ?educationLabel (COUNT (?namesake) as ?Count)
 WHERE {
   ?item wdt:P31 wd:Q19844914. #university building
